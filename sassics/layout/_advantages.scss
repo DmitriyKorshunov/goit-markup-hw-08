@@ -1,0 +1,94 @@
+.section-advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-content {
+  display: flex;
+}
+
+.advantages-content .advantages-content__item + .advantages-content__item {
+  margin-left: 30px;
+}
+
+.advantages-content__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-content__item--iconantenna::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  display: block;
+  background-position: center;
+  background-size: 70px 70px;
+  background-color: #f4f5fa;
+  padding: 25px 100px;
+  background-image: url("../img/antenna.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages-content__item--iconclock::before {
+  content: "";
+  margin: auto;
+  width: 270px;
+  height: 120px;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  background-size: 70px 70px;
+  background-color: #f4f5fa;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.advantages-content__item--icondiagram::before {
+  content: "";
+  margin: auto;
+  width: 270px;
+  height: 120px;
+  background-image: url("../img/diagram.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  background-size: 70px 70px;
+  background-color: #f4f5fa;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.advantages-content__item--iconastronaut::before {
+  content: "";
+  margin: auto;
+  width: 270px;
+  height: 120px;
+  background-image: url("../img/astronaut.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  background-size: 70px 70px;
+  background-color: #f4f5fa;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.advantages-content__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
