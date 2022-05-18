@@ -407,6 +407,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .section-team .container {
     max-width: 1200px;
   }
@@ -436,10 +440,21 @@ img {
     margin-right: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc(25% - 30px);
+  }
+}
 
 .team-title {
   margin-bottom: 30px;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-list__img {
