@@ -230,6 +230,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section-advantages {
+    padding: 94px 0;
+  }
+}
 
 .advantages-content {
   margin-bottom: -30px;
@@ -250,6 +255,11 @@ img {
     width: calc(50% - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-content__item {
+    width: calc(25% - 30px);
   }
 }
 
