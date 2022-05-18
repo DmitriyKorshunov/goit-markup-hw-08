@@ -345,7 +345,13 @@ img {
 }
 
 .section-work {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .section-work {
+    display: block;
+  }
 }
 
 .section-work__title {
