@@ -49,15 +49,24 @@ img {
 .container {
   width: 100%;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -220,6 +229,10 @@ img {
 .section-advantages {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.advantages-content__item {
+  margin-bottom: 30px;
 }
 
 .advantages-content__title {
