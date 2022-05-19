@@ -1,23 +1,26 @@
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
 }
 
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
-.clients-item + .clients-item {
+.clients-item {
+  width: calc(100% / 2 - 30px);
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .clients-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   fill: rgba(175, 177, 184, 1);
