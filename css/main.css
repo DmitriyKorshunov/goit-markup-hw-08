@@ -216,6 +216,13 @@ img {
     padding: 118px 200px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
+}
 
 .hero__iner {
   display: flex;
@@ -225,6 +232,11 @@ img {
 @media screen and (min-width: 768px) {
   .hero__iner {
     width: max-content;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__iner {
+    max-width: 1200px;
   }
 }
 
@@ -245,6 +257,13 @@ img {
   .hero__title {
     margin: 0;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 

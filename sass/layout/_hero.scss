@@ -19,6 +19,12 @@
   @media screen and (min-width: 768px) {
     padding: 118px 200px;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
 }
 
 .hero__iner {
@@ -28,6 +34,10 @@
 
   @media screen and (min-width: 768px) {
     width: max-content;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
@@ -49,5 +59,11 @@
   @media screen and (min-width: 768px) {
     margin: 0;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
