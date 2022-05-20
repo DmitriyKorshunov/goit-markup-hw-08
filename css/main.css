@@ -51,22 +51,22 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
+
 .title {
   font-weight: 700;
   font-size: 28px;
@@ -211,6 +211,22 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 200px;
+  }
+}
+
+.hero__iner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__iner {
+    width: max-content;
+  }
+}
 
 .hero__title {
   display: inline-block;
@@ -224,6 +240,12 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .section-advantages {
