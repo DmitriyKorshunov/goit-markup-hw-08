@@ -11,6 +11,20 @@
 
 .footer-inner {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    min-width: 232px;
+    margin: 0;
+  }
+}
+
+.footer-wrap__iner {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-inner__logo {
@@ -46,6 +60,13 @@
 
 .footer-soc {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    min-width: 206px;
+    padding-top: 5px;
+    margin: 0;
+  }
 }
 
 .footer-soc__title {
@@ -76,6 +97,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-subscribe__title {
