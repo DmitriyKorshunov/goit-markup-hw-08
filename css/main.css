@@ -150,7 +150,6 @@ img {
 .site-nav {
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
 }
 
 .site-nav__item {
