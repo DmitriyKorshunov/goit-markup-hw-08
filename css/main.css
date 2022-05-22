@@ -112,7 +112,6 @@ img {
 .wrapper-nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .btn-mobmenu {
@@ -121,29 +120,58 @@ img {
   margin: 0;
   border: none;
   background-color: transparent;
-}
-.btn-mobmenu.is-open .icon-close {
-  display: block;
-}
-
-.icon-close {
-  display: none;
+  margin-left: auto;
+  margin-top: 10px;
 }
 
-.btn-mobmenu.is-open .icon-open {
-  display: none;
+.icon-close:hover,
+.icon-close:focus {
+  cursor: pointer;
+  fill: var(--accent-color);
 }
 
-.site-nav .site-nav__link {
-  color: var(--title-text-color);
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-primary-color);
+}
+
+.header-nav {
+  margin-left: -25px;
+  margin-bottom: 302px;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.site-nav__item {
+  position: relative;
+  width: max-content;
+  margin-bottom: 35px;
+}
+
+.site-nav__link {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.02em;
+  color: var(--title-text-color);
   transition: color 250ms var(--timing-function);
 }
 
-.site-nav .site-nav__link::after {
+.site-nav__link::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -157,24 +185,35 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-.site-nav .site-nav__link:hover,
-.site-nav .site-nav__link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .site-nav__link.current {
+.site-nav__link.current {
   color: var(--accent-color);
 }
 
-.site-nav .site-nav__link.current::after {
+.site-nav__link.current::after {
   opacity: 1;
+}
+
+.auth-nav {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: -25px;
+  margin-bottom: 64px;
+}
+
+.auth-nav__item {
+  margin-left: 25px;
 }
 
 .auth-nav__link {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 34px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   transition: color 250ms var(--timing-function);
 }
@@ -185,11 +224,21 @@ img {
 }
 
 .auth-nav__icon {
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-  margin-right: 10px;
+  display: none;
+}
+
+.menu-soc__list {
+  display: flex;
+}
+
+.menu-soc__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .hero {
