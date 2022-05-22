@@ -18,11 +18,24 @@
   <body>
     <!--HEADER-->
     <header class="header">
-      <div class="container wrapper-nav">
-        <nav class="header-nav">
+      <div class="container">
+        <div class="wrapper-nav">
           <a href="https://WebStudio.com" class="logo list">
             <span class="logo__web">Web</span>Studio
           </a>
+          <button type="button" class="btn-mobmenu is-open">
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-close" href="./img/icons.svg#closemobmenu"></use>
+              <use class="icon-open" href="./img/icons.svg#mobmenuopen"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="header-nav">
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="" class="site-nav__link current list">Студия</a>
@@ -451,7 +464,6 @@
             </ul>
           </div>
         </div>
-
         <div
           class="footer-subscribe"
           role="group"
@@ -576,6 +588,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
