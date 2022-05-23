@@ -124,6 +124,15 @@ img {
   margin-top: 10px;
 }
 
+.menu-open-btn:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+.mob-menu.is-hidden {
+  display: none;
+}
+
 .menu-close-btn {
   display: block;
   padding: 0;
@@ -131,6 +140,11 @@ img {
   background-color: transparent;
   margin-left: auto;
   margin-top: 10px;
+}
+
+.menu-close-btn:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .mob-menu {
@@ -146,7 +160,7 @@ img {
 }
 
 .mob-menu.is-hidden {
-  opacity: 0;
+  display: none;
 }
 
 .header-nav {
@@ -169,12 +183,9 @@ img {
 }
 
 .site-nav__link {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition: color 250ms var(--timing-function);
@@ -255,7 +266,7 @@ img {
 
 .menu-soc__list {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-left: -15px;
 }
 
@@ -270,7 +281,7 @@ img {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .menu-soc__link--line::after {
