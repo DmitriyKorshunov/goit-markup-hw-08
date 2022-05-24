@@ -17,6 +17,10 @@
     padding-bottom: 22px;
     margin-right: 88px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .menu-open-btn {
@@ -110,6 +114,10 @@
     margin-right: 75px;
     max-width: 294px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 
 .site-nav {
@@ -200,6 +208,13 @@
       margin-bottom: 10px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    & .auth-nav__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .auth-nav__item {
@@ -215,6 +230,10 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
   }
 }
 
@@ -255,6 +274,11 @@
     font-size: 12px;
     line-height: 1.17;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .auth-nav__link--telcolor {
@@ -268,6 +292,11 @@
 
     color: var(--primary-text-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .auth-nav__icon {
@@ -278,6 +307,28 @@
 
     fill: currentColor;
     margin-right: 10px;
+
+    .icon-envelope {
+      width: 14px;
+      height: 10px;
+    }
+
+    .icon-phone {
+      width: 10px;
+      height: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .icon-envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    .icon-phone {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
 
