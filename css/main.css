@@ -1172,6 +1172,11 @@ img {
     min-width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
+}
 
 .modal-button {
   position: absolute;
@@ -1206,6 +1211,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal-titel {
+    line-height: 1.15;
+  }
 }
 
 .modal-field {
@@ -1295,6 +1305,12 @@ img {
   font-size: 12px;
   line-height: 1.17;
   margin: 0 auto 30px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox-label__input {

@@ -39,6 +39,10 @@
   @media screen and (min-width: 480px) {
     min-width: 450px;
   }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+  }
 }
 
 .modal-button {
@@ -81,6 +85,10 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-field {
@@ -180,6 +188,11 @@
   line-height: 1.17;
 
   margin: 0 auto 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox-label__input {
