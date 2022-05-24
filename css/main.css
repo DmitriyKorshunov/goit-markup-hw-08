@@ -183,12 +183,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
-    position: relative;
+    position: absolute;
     left: 237px;
     width: max-content;
     padding: 0;
     margin: 0;
     height: 48px;
+    overflow-y: hidden;
   }
 }
 
@@ -200,7 +201,8 @@ img {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    left: 0;
+    height: 79px;
+    left: auto;
   }
 }
 
@@ -213,6 +215,7 @@ img {
     display: flex;
     align-items: center;
     padding: 0;
+    padding-top: 32px;
     margin: 0;
     margin-right: 75px;
     max-width: 294px;
