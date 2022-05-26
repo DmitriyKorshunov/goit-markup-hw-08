@@ -592,7 +592,15 @@ img {
 }
 
 .advantages-content__item {
+  position: relative;
   margin-bottom: 30px;
+}
+.advantages-content__item::before {
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  display: block;
+  background-color: #f4f5fa;
 }
 @media screen and (min-width: 768px) {
   .advantages-content__item {
@@ -605,6 +613,13 @@ img {
   .advantages-content__item {
     width: calc(25% - 30px);
   }
+}
+
+.section-advantages__icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .advantages-content__title {
@@ -621,60 +636,6 @@ img {
   .advantages-content__title {
     text-align: left;
   }
-}
-
-.advantages-content__item--iconantenna::before {
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  display: block;
-  background-position: center;
-  background-size: 70px 70px;
-  background-color: #f4f5fa;
-  background-image: url("../img/antenna.svg");
-  background-repeat: no-repeat;
-}
-
-.advantages-content__item--iconclock::before {
-  content: "";
-  margin: auto;
-  height: 120px;
-  background-image: url("../img/clock.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center;
-  background-size: 70px 70px;
-  background-color: #f4f5fa;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-}
-
-.advantages-content__item--icondiagram::before {
-  content: "";
-  margin: auto;
-  height: 120px;
-  background-image: url("../img/diagram.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center;
-  background-size: 70px 70px;
-  background-color: #f4f5fa;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-}
-
-.advantages-content__item--iconastronaut::before {
-  content: "";
-  margin: auto;
-  height: 120px;
-  background-image: url("../img/astronaut.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center;
-  background-size: 70px 70px;
-  background-color: #f4f5fa;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
 }
 
 .advantages-content__text {
