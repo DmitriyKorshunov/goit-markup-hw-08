@@ -1101,14 +1101,8 @@ img {
   }
 }
 
-.btn-subscribe::after {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+.btn-subscribe__icon {
   margin-left: 10px;
-  background-image: url("../img/iconsend.svg");
-  background-repeat: no-repeat;
 }
 
 .backdrop {
